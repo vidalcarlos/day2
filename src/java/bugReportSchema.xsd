@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    
+    
+    <xs:element name="bug">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="user" type="xs:string"/>
+                <xs:element name="email" type="xs:string"/>
+                <xs:element ref="prioridade"/>
+                <xs:element name="descricao" type="xs:string"/>
+                <xs:element name="imagem" type="xs:string"/>
+                <xs:element name="fechado" type="xs:boolean"/>
+            </xs:sequence>
+            
+            
+        </xs:complexType>
+        <xs:key name="id" />
+                                    
+    </xs:element>
+    <xs:element name="prioridade">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="critico"/>
+                <xs:enumeration value="sugestao"/>
+                <xs:enumeration value="outro"/>
+                    
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    <xs:element name="bugReport">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="bug" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:integer" />
+        </xs:complexType>
+    </xs:element>
+                    
+                    
+        
+
+</xs:schema>

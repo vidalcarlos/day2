@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet type="text/xsl" href="bugReportStyle.xsl"?>
+
+<bugReport 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="bugReportSchema.xsd">
+    
+    <bug id="1" createDate="2015-05-19">
+        <user>Jose Fulano</user>
+        <email>jfulano@marinha.pt</email>
+        <prioridade>critico</prioridade>
+        <descricao>aplicação demora muito no processo</descricao>
+        <imagem>img1.png</imagem>
+        <fechado>true</fechado>
+    </bug>
+     <bug id="2" createDate="2015-05-19">
+        <user>Jose Artista</user>
+        <email>jartista@marinha.pt</email>
+        <prioridade>sugestao</prioridade>
+        <descricao>aplicação falha intermitente</descricao>
+        <imagem>img2.png</imagem>
+        <fechado>false</fechado>
+    </bug>
+</bugReport>
