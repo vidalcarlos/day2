@@ -15,10 +15,12 @@
                 <xs:element name="imagem" type="xs:string"/>
                 <xs:element name="fechado" type="xs:boolean"/>
             </xs:sequence>
+            <xs:attribute name="id" />
+            <xs:attribute name="createDate" />
             
             
         </xs:complexType>
-        <xs:key name="id" />
+        
                                     
     </xs:element>
     <xs:element name="prioridade">
